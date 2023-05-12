@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html>
+   <body>
+      <table border = 1>
+         <thead>
+            <td>EMPID</td>
+
+            <td>EMPname</td>
+
+            <td>EMPgender</td>
+
+            <td>EMPphone</td>
+
+            <td>EMPBdate</td>
+
+         </thead>
+
+         {% for row in rows %}
+            <tr>
+               <td>{{row["EMPID"]}}</td>
+
+               <td>{{row["EMPname"]}}</td>
+
+               <td>{{row["EMPgender"]}}</td>
+
+               <td>{{row["EMPphone"]}}</td>
+
+               <td>{{row["EMPBdate"]}}</td>
+
+            </tr>
+         {% endfor %}
+      </table>
+
+     <a href = "/">Go back to home page</a>
+
+  </body>
+</html>
